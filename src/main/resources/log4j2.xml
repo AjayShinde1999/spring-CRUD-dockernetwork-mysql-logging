@@ -1,0 +1,17 @@
+<Configuration>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern = "%d{yyyy-MM-dd HH:mm:ss} [%t] %-10level %-60c %msg %n"/>
+        </Console>
+        <File name="File" fileName="ajay.log">
+            <PatternLayout pattern = "%d{yyyy-MM-dd HH:mm:ss} [%t] %-10level %-60c %msg %n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref = "Console"/>
+            <AppenderRef ref = "File"/>
+        </Root>
+
+    </Loggers>
+</Configuration>
